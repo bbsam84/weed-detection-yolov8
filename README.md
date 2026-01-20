@@ -18,12 +18,12 @@ This project detects weeds in farm/field videos using a trained YOLOv8 object de
 - Ultralytics YOLOv8
 - Roboflow (dataset)
 
-## How to Run
-1. Install dependencies:
-```bash
-pip install ultralytics
-from ultralytics import YOLO
+## 🚀 How to Run
+1. Install requirements:
+   pip install ultralytics
 
-model = YOLO("best_weed_model.pt")
-model.predict(source="demo.mp4", save=True, conf=0.05)
+2. Run prediction:
+   from ultralytics import YOLO
+   model = YOLO("best_weed_model.pt")
+   model.predict(source="weeds_full.mp4", save=True)
 
