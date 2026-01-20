@@ -24,6 +24,8 @@ This project detects weeds in farm/field videos using a trained YOLOv8 object de
 
 2. Run prediction:
    from ultralytics import YOLO
-   model = YOLO("best_weed_model.pt")
-   model.predict(source="weeds_full.mp4", save=True)
+
+model = YOLO("best_weed_model.pt")
+results = model.predict(source="your_video.mp4", save=True, conf=0.05)
+
 
